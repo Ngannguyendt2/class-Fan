@@ -3,10 +3,10 @@
 
 class Fan
 {
-    protected $slow = 1;
-    protected $medium = 2;
-    protected $fast = 3;
-    private $speed = 1;
+   const SLOW = 1;
+    const MEDIUM = 2;
+    const FAST = 3;
+    private $speed = self::SLOW;
     private $on = false;
     private $radius = 5;
     private $color = 'blue';
